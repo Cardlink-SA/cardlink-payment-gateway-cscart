@@ -59,4 +59,4 @@ image:
 3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”. IRIS is enabled only if you select “Nexi” acquirer in the Cardlink payment method.
 4. Click on each payment method and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
    following images:
-   [IMAGE CARDLINK] + [IMAGE IRIS]
+   ![IMAGE CARDLINK] + ![IMAGE IRIS]
