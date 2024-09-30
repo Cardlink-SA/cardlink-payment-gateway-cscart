@@ -3,7 +3,7 @@
     <id>cardlink</id>
     <name>Cardlink</name>
     <version>1.0</version>
-    <priority>1</priority>
+    <priority>99999</priority>
     <status>active</status>
     <default_language>en</default_language>
     <compatibility>

@@ -1,4 +1,17 @@
 <div class="control-group">
+    <label class="control-label" for="ab_acquirer">{__("cardlink.acquirer")}:</label>
+    <div class="controls">
+        <select name="payment_data[processor_params][acquirer]" id="ab_acquirer">
+            <option value="0"{if $processor_params.acquirer eq "0"} selected="selected"{/if}>Cardlink Checkout</option>
+            <option value="1"{if $processor_params.acquirer eq "1"} selected="selected"{/if}>Nexi Checkout</option>
+            <option value="2"{if $processor_params.acquirer eq "2"} selected="selected"{/if}>Worldline Greece Checkout</option>
+        </select>
+    </div>
+
+
+</div>
+
+<div class="control-group">
 	<label class="control-label" for="ab_merchant_id">{__("merchant_id")}:</label>
 	<div class="controls">
 		<input type="text" name="payment_data[processor_params][merchant_id]" id="ab_merchant_id" value="{$processor_params.merchant_id}" class="input-text" size="60" />
@@ -77,16 +90,7 @@
     </div>
 </div>
 
-<div class="control-group">
-    <label class="control-label" for="ab_acquirer">{__("cardlink.acquirer")}:</label>
-    <div class="controls">
-        <select name="payment_data[processor_params][acquirer]" id="ab_acquirer">
-            <option value="0"{if $processor_params.acquirer eq "0"} selected="selected"{/if}>Cardlink Checkout</option>
-            <option value="1"{if $processor_params.acquirer eq "1"} selected="selected"{/if}>Nexi Checkout</option>
-            <option value="2"{if $processor_params.acquirer eq "2"} selected="selected"{/if}>Worldline Greece Checkout</option>
-        </select>
-    </div>
-</div>
+
 
 <div class="control-group">
     <label class="control-label" for="ab_installments">{__("cardlink.installments")}:</label>

@@ -5,6 +5,13 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
 
 ## Changelog
 
+* 1.1.1
+  * Added fix for overrides by other addons. Currently payment_dependencies addon.
+
+* 1.1.0
+  * Added support for IRIS payments on Nexi
+  * Now addon can add payment methods with images
+
 * 1.0.3
   * Fixed extra check if bank not send field
 
@@ -49,9 +56,7 @@ image:
 1. Upload cardlink.zip as shown in the following image:
    ![image002](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image002.png)
 2. After upload, you should locate the Cardlink addon in the addons list and click “Install”.
-3. Go to “Administration &gt; Payment methods ” and click the blue plus (+) button to create a
-   new payment method. Select “Cardlink” in the Processor select box and fill in all other fields
-   as appropriate.
-4. Click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
-   following image:
-   ![image003](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image003.png)
+3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”. IRIS is enabled only if you select “Nexi” acquirer in the Cardlink payment method.
+4. Click on each payment method and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
+   following images:
+   [IMAGE CARDLINK] + [IMAGE IRIS]

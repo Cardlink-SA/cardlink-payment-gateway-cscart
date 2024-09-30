@@ -147,3 +147,16 @@ msgstr "Άγνωστο σφάλμα!"
 msgctxt "Languages::cardlink.digest_wrong"
 msgid "Digest was wrong! Possible fraud"
 msgstr "Η συμβολοσειρά της cardlink δεν συμφωνεί με την παραγώμενη! Πιθανή απάτη"
+
+msgctxt "Languages::cardlink.iris"
+msgid "IRIS"
+msgstr "IRIS"
+
+msgctxt "Languages::cardlink.iris_customer_code"
+msgid "IRIS Customer Code"
+msgstr "IRIS Customer Code"
+
+msgctxt "Languages::cardlink.iris_misconfigured_acquirer"
+msgid "You must select Nexi to be able to use IRIS payments"
+msgstr "Θα πρέπει να έχετε ενεργοποιήσει την μέθοδο πληρωμής Cardlink και να έχετε επιλέξει Nexi για να χρησιμοποιήσετε IRIS"
+
