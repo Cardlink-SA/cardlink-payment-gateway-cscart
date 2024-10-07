@@ -43,6 +43,8 @@ Once you have completed the requested tests and any changes to your website, you
 6.	Redirection option: user should have a check box to enable pop up with i-frame without redirection.
 7.	A text field for providing the absolute or relative (to Cardlink Payment Gateway location on server) url of custom CSS stylesheet, to change css styles in payment page.
 8.	Translation ready for Greek & English languages.
+9.  IRIS payments for Nexi acquirer only. Uppon installation, an extra payment is created. This payment can only be activated if Nexi is selected in the Cardlink payment method.
+10. Not supporting iframe. The IRIS payments does not support the iframe feature.
 
 
 ## Installation
@@ -59,5 +61,4 @@ image:
 3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”. IRIS is enabled only if you select “Nexi” acquirer in the Cardlink payment method.
 4. Click on each payment method and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
    following images:
-   ![image003](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image003.png)
-   ![image004](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image004.png)
+   [IMAGE CARDLINK] + [IMAGE IRIS]
