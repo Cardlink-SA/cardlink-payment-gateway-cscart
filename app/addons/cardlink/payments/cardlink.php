@@ -311,9 +311,9 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		'shipCity'             => $order_info['s_city'],
 		'shipAddress'          => $order_info['s_address'],
 		'trType'               => $trType,
-		'cssUrl'               => $processor_data['processor_params']['css_url'],
 		'extInstallmentoffset' => $offset,
 		'extInstallmentperiod' => $installments,
+		'cssUrl'               => $processor_data['processor_params']['css_url'],
 		'confirmUrl'           => $confirm_url,
 		'cancelUrl'            => $cancel_url,
 

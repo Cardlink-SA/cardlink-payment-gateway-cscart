@@ -5,6 +5,9 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
 
 ## Changelog
 
+* 1.1.2
+  * Fixed parameters order that in specific conditions could result in invalid digest.
+
 * 1.1.1
   * Added fix for overrides by other addons. Currently payment_dependencies addon.
 
