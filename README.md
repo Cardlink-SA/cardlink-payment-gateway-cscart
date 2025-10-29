@@ -5,6 +5,10 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
 
 ## Changelog
 
+* 1.1.4
+  * Fixed RF code generation on Nexi+Cardlink.
+  * Fixed digest check on Worldline
+
 * 1.1.3
   * Enabled IRIS for Worldline and Cardlink.
   
