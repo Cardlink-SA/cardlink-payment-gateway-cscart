@@ -5,6 +5,9 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
 
 ## Changelog
 
+* 1.1.3
+  * Enabled IRIS for Worldline and Cardlink.
+  
 * 1.1.2
   * Fixed parameters order that in specific conditions could result in invalid digest.
 
@@ -46,7 +49,7 @@ Once you have completed the requested tests and any changes to your website, you
 6.	Redirection option: user should have a check box to enable pop up with i-frame without redirection.
 7.	A text field for providing the absolute or relative (to Cardlink Payment Gateway location on server) url of custom CSS stylesheet, to change css styles in payment page.
 8.	Translation ready for Greek & English languages.
-9.  IRIS payments for Nexi acquirer only. Uppon installation, an extra payment is created. This payment can only be activated if Nexi is selected in the Cardlink payment method.
+9.  IRIS payments for all acquirers. Uppon installation, an extra payment is created.
 10. Not supporting iframe. The IRIS payments does not support the iframe feature.
 
 
@@ -61,7 +64,7 @@ image:
 1. Upload cardlink.zip as shown in the following image:
    ![image002](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image002.png)
 2. After upload, you should locate the Cardlink addon in the addons list and click “Install”.
-3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”. IRIS is enabled only if you select “Nexi” acquirer in the Cardlink payment method.
+3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”.
 4. Click on each payment method and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
    following images:
    [IMAGE CARDLINK] + [IMAGE IRIS]

@@ -236,22 +236,22 @@ function fn_cardlink_return_error($error = 'A') {
 }
 
 function fn_cardlink_get_payments_post($params, &$payments) {
-	$iris_payment_id = fn_cardlink_get_iris_payment_id();
-	$cardlink_payment_id = fn_cardlink_get_payment_id();
+//	$iris_payment_id = fn_cardlink_get_iris_payment_id();
+//	$cardlink_payment_id = fn_cardlink_get_payment_id();
 
-	foreach ($payments as $k => $payment) {
+//	foreach ($payments as $k => $payment) {
 		//check if payment is IRIS
-		if (is_array($payment) && $payment['payment_id'] == $iris_payment_id) {
+//		if (is_array($payment) && $payment['payment_id'] == $iris_payment_id) {
 			//check if cardlink payment exists and if Nexi is selected
-			$data = fn_get_processor_data($cardlink_payment_id);
-			if (!isset($data['processor_params']) || $data['processor_params']['acquirer'] != '1') {
-				$payments[$k]['status'] = 'D';
-				$payments[$k]['payment'] .= "\n(".__("cardlink.iris_misconfigured_acquirer").")";
+			//$data = fn_get_processor_data($cardlink_payment_id);
+//			if (!isset($data['processor_params']) || $data['processor_params']['acquirer'] != '1') {
+//				$payments[$k]['status'] = 'D';
+//				$payments[$k]['payment'] .= "\n(".__("cardlink.iris_misconfigured_acquirer").")";
 				//				unset($payments[$k]);
 //				fn_set_notification("E", __("cardlink.iris_misconfigured_acquirer"), __("cardlink.iris_misconfigured_acquirer"));
-			}
-		}
-	}
+//			}
+//		}
+//	}
 }
 
 

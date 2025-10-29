@@ -19,11 +19,18 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
 
 	if ($mode == 'success' && !empty($_REQUEST['order_id'])) {
+
+
+
+
 		$order_info = fn_get_order_info($order_id);
 
 		if (empty($processor_data)) {
 			$processor_data = fn_get_processor_data($order_info['payment_id']);
 		}
+
+		$processor_data_cardlink = fn_get_processor_data(fn_cardlink_get_payment_id()); //get the data from the Cardlink payment method
+
 		$xlsbonusdigest = '';
 		$post_data = $post_data_bonus = array();
 		$post_data_values = array(
@@ -46,7 +53,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
 
 		//EG: ALPHA Bonus
-		if ($processor_data['processor_params']['acquirer'] == 1) { //EG: Only if Nexi
+		if ($processor_data_cardlink['processor_params']['acquirer'] == 1) { //EG: Only if Nexi
 			$post_data_values[] = 'xlsbonusadjamt';
 			$post_data_values[] = 'xlsbonustxid';
 			$post_data_values[] = 'xlsbonusstatus';
@@ -90,13 +97,23 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		}
 
 
-		$form_secret = $processor_data['processor_params']['shared_secret'];
+
+
+
+		$form_secret = $processor_data_cardlink['processor_params']['shared_secret'];
+
+
+
 		$form_data = iconv('utf-8', 'utf-8//IGNORE', implode("", $post_data)) . $form_secret;
 		$digest = base64_encode(hash('sha256', $form_data, true));
 
+
+
+
+
 		$failed = false;
 
-		if ($processor_data['processor_params']['acquirer'] == 1 && isset($_REQUEST['xlsbonusdigest'])) { //EG: Only if Nexi and only if the field was sent
+		if ($processor_data_cardlink['processor_params']['acquirer'] == 1 && isset($_REQUEST['xlsbonusdigest'])) { //EG: Only if Nexi and only if the field was sent
 
 			$failed = true;
 			$form_data_bonus = iconv('utf-8', 'utf-8//IGNORE', implode("", $post_data_bonus)) . $form_secret;
@@ -110,7 +127,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		}
 
 
-		if (!$failed && $_REQUEST['digest'] === $digest) {
+		if (!$failed && $_POST['digest'] === $digest) {
 
 
 			if ($_REQUEST['status'] == 'CAPTURED' || $_REQUEST['status'] == 'AUTHORIZED') {
@@ -229,32 +246,32 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		switch ($processor_data['processor_params']['acquirer']) {
 			case 0 :
 				//This is wrong. Only nexi is allowed
-				fn_cardlink_return_error("A");
-				//$payment_url = "https://ecommerce-test.cardlink.gr/vpos/shophandlermpi";
+				//fn_cardlink_return_error("A");
+				$payment_url = "https://ecommerce-test.cardlink.gr/vpos/shophandlermpi";
 				break;
 			case 1 :
 				$payment_url = "https://alphaecommerce-test.cardlink.gr/vpos/shophandlermpi";
 				break;
 			case 2 :
 				//This is wrong. Only nexi is allowed
-				fn_cardlink_return_error("A");
-				//$payment_url = "https://eurocommerce-test.cardlink.gr/vpos/shophandlermpi";
+				//fn_cardlink_return_error("A");
+				$payment_url = "https://eurocommerce-test.cardlink.gr/vpos/shophandlermpi";
 				break;
 		}
 	} else {
 		switch ($processor_data['processor_params']['acquirer']) {
 			case 0 :
 				//This is wrong. Only nexi is allowed
-				fn_cardlink_return_error("A");
-				//$payment_url = "https://ecommerce.cardlink.gr/vpos/shophandlermpi";
+//				fn_cardlink_return_error("A");
+				$payment_url = "https://ecommerce.cardlink.gr/vpos/shophandlermpi";
 				break;
 			case 1 :
 				$payment_url = "https://www.alphaecommerce.gr/vpos/shophandlermpi";
 				break;
 			case 2 :
 				//This is wrong. Only nexi is allowed
-				fn_cardlink_return_error("A");
-				//$payment_url = "https://vpos.eurocommerce.gr/vpos/shophandlermpi";
+//				fn_cardlink_return_error("A");
+				$payment_url = "https://vpos.eurocommerce.gr/vpos/shophandlermpi";
 				break;
 		}
 	}
@@ -292,7 +309,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		'mid'                  => $processor_data['processor_params']['merchant_id'],
 		'lang'                 => CART_LANGUAGE,
 		'orderid'              => $order_id . 'at' . date('Ymdhisu'),
-		'orderDesc'            => fn_cardlink_iris_rf_code($order_id, $processor_data_iris['processor_params']['iris_customer_code']),
+		'orderDesc'            => $processor_data['processor_params']['acquirer'] == 1  ? fn_cardlink_iris_rf_code($order_id, $processor_data_iris['processor_params']['iris_customer_code']): "Order #{$order_id}",
 		//EG: Added to get RF
 		'orderAmount'          => $amount,
 		'currency'             => $processor_data['processor_params']['currency'],
@@ -310,14 +327,15 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		'shipAddress'          => $order_info['s_address'],
 		'payMethod'            => 'IRIS',
 //		'trType'               => $trType,
-		'cssUrl'               => $processor_data['processor_params']['css_url'],
 		'extInstallmentoffset' => $offset,
 		'extInstallmentperiod' => $installments,
+		'cssUrl'               => $processor_data['processor_params']['css_url'],
 		'confirmUrl'           => $confirm_url,
 		'cancelUrl'            => $cancel_url,
 
 
 	);
+
 
 
 
