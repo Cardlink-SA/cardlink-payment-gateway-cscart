@@ -23,7 +23,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
 
 
-	if ($mode == 'success' && !empty($_POST['order_id'])) {
+	if ($mode == 'success' && !empty($_REQUEST['order_id'])) {
 		$order_info = fn_get_order_info($order_id);
 
 		if (empty($processor_data)) {
@@ -106,7 +106,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		}
 
 
-		if (!$failed && $_POST['digest'] === $digest) {
+		if (!$failed && $_REQUEST['digest'] === $digest) {
 
 
 

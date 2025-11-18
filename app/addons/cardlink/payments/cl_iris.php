@@ -127,7 +127,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		}
 
 
-		if (!$failed && $_POST['digest'] === $digest) {
+		if (!$failed && $_REQUEST['digest'] === $digest) {
 
 
 			if ($_REQUEST['status'] == 'CAPTURED' || $_REQUEST['status'] == 'AUTHORIZED') {
@@ -262,7 +262,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		switch ($processor_data['processor_params']['acquirer']) {
 			case 0 :
 				//This is wrong. Only nexi is allowed
-//				fn_cardlink_return_error("A");
+				//				fn_cardlink_return_error("A");
 				$payment_url = "https://ecommerce.cardlink.gr/vpos/shophandlermpi";
 				break;
 			case 1 :
@@ -270,7 +270,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 				break;
 			case 2 :
 				//This is wrong. Only nexi is allowed
-//				fn_cardlink_return_error("A");
+				//				fn_cardlink_return_error("A");
 				$payment_url = "https://vpos.eurocommerce.gr/vpos/shophandlermpi";
 				break;
 		}
@@ -282,7 +282,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 	}
 
 	$version = 2;
-//	$trType = $processor_data['processor_params']['transaction_type'] == 'yes' ? 2 : 1;
+	//	$trType = $processor_data['processor_params']['transaction_type'] == 'yes' ? 2 : 1;
 	$country = $order_info['b_country'];
 	$ship_country = $order_info['s_country'];
 	$state_code = $order_info['b_state'];
@@ -309,7 +309,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		'mid'                  => $processor_data['processor_params']['merchant_id'],
 		'lang'                 => CART_LANGUAGE,
 		'orderid'              => $order_id . 'at' . date('Ymdhisu'),
-		'orderDesc'            => $processor_data['processor_params']['acquirer'] == 1  ? fn_cardlink_iris_rf_code($order_id, $processor_data_iris['processor_params']['iris_customer_code']): "Order #{$order_id}",
+		'orderDesc'            => $processor_data['processor_params']['acquirer'] == 1 && trim($processor_data_iris['processor_params']['iris_customer_code'])  ? fn_cardlink_iris_rf_code($order_id, $processor_data_iris['processor_params']['iris_customer_code']): "Order #{$order_id}",
 		//EG: Added to get RF
 		'orderAmount'          => $amount,
 		'currency'             => $processor_data['processor_params']['currency'],
@@ -326,7 +326,7 @@ if (defined('PAYMENT_NOTIFICATION')) {
 		'shipCity'             => $order_info['s_city'],
 		'shipAddress'          => $order_info['s_address'],
 		'payMethod'            => 'IRIS',
-//		'trType'               => $trType,
+		//		'trType'               => $trType,
 		'extInstallmentoffset' => $offset,
 		'extInstallmentperiod' => $installments,
 		'cssUrl'               => $processor_data['processor_params']['css_url'],
