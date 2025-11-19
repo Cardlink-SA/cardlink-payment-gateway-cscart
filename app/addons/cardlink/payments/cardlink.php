@@ -10,9 +10,6 @@ use Tygh\Registry;
 use Tygh\Tygh;
 
 
-
-
-
 if (defined('PAYMENT_NOTIFICATION')) {
 	$pp_response = array();
 	$pp_response['order_status'] = 'F';

@@ -72,6 +72,14 @@ image:
    ![image002](https://developer.cardlink.gr/downloads/cardlink-payment-gateway-cscart-assets/image002.png)
 2. After upload, you should locate the Cardlink addon in the addons list and click “Install”.
 3. Go to “Administration &gt; Payment methods ”. There will be two new payment methods named “Cardlink” & “IRIS by Cardlink”.
-4. Click on each payment method and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
-   following images:
-   [IMAGE CARDLINK] + [IMAGE IRIS]
+4. Click on main payment method (Cardlink) and then on click the &quot;Configure&quot; tab and then fill in the payment module settings as shown in the
+   following image:
+   [IMAGE CARDLINK]
+   
+
+## Update
+
+Before update you need to have the ***Rebuild cache automatically*** switch to ON or otherwise addon changes might not appear as they should.
+You can find the switch at: Website -> Themes (?dispatch=themes.manage) as shown in image:
+[IMAGE REBUILD_CACHE]
+  

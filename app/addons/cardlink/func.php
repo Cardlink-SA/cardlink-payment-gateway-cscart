@@ -96,7 +96,7 @@ function fn_cardlink_install() {
 		"processor"          => 'IRIS by Cardlink',
 		"processor_script"   => 'cl_iris.php',
 		"processor_template" => 'views/orders/components/payments/cc_outside.tpl',
-		"admin_template"     => 'cl_iris.tpl',
+		"admin_template"     => '',
 		"callback"           => 'N',
 		"type"               => 'P',
 		"addon"              => 'cardlink'
