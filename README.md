@@ -6,14 +6,14 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
 ## Changelog
 
 * 1.1.5
-  * Made seller id optional for Nexi
+  * Made seller id optional for Nexi. (If you already use IRIS with your own seller id, DO NOT install the new version!)
 
 * 1.1.4
   * Fixed RF code generation on Nexi+Cardlink.
   * Fixed digest check on Worldline
 
 * 1.1.3
-  * Enabled IRIS for Worldline and Cardlink.
+  * Enabled IRIS for Worldline and Cardlink. (If you already use IRIS with your own seller id, DO NOT install the new version!)
   
 * 1.1.2
   * Fixed parameters order that in specific conditions could result in invalid digest.
@@ -22,7 +22,7 @@ Cardlink Payment Gateway allows you to accept payment through various schemes su
   * Added fix for overrides by other addons. Currently payment_dependencies addon.
 
 * 1.1.0
-  * Added support for IRIS payments on Nexi
+  * Added support for IRIS payments on Nexi. (If you already use IRIS with your own seller id, DO NOT install the new version!)
   * Now addon can add payment methods with images
 
 * 1.0.3
