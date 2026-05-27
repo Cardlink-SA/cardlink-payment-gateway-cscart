@@ -157,3 +157,176 @@ msgstr "IRIS Customer Code"
 msgctxt "Languages::cardlink.iris_misconfigured_acquirer"
 msgid "You must select Nexi to be able to use IRIS payments"
 msgstr "You must enable the Cardlink payment method and select Nexi to be able to use IRIS payments"
+
+msgctxt "Languages::cardlink.api_password"
+msgid "Direct API Password"
+msgstr "Direct API Password"
+
+msgctxt "Languages::cardlink.gateway_id"
+msgid "Gateway ID"
+msgstr "Gateway ID"
+
+msgctxt "Languages::cardlink.gateway_id_tip"
+msgid "Required for Google Pay and Apple Pay integrations."
+msgstr "Required for Google Pay and Apple Pay integrations."
+
+msgctxt "Languages::cardlink.enable_secondary_actions"
+msgid "Enable Secondary Actions"
+msgstr "Enable Secondary Actions"
+
+msgctxt "Languages::cardlink.enable_wallets"
+msgid "Enable Wallets"
+msgstr "Enable Wallets (Apple, Google)"
+
+msgctxt "Languages::cardlink.pay_with_wallet"
+msgid "Pay with Wallet"
+msgstr "Pay with Wallet"
+
+msgctxt "Languages::cardlink.refund_amount"
+msgid "Refund Amount"
+msgstr "Refund Amount"
+
+msgctxt "Languages::cardlink.execute_refund"
+msgid "Execute Refund"
+msgstr "Execute Refund"
+
+msgctxt "Languages::cardlink.action_refund_failed"
+msgid "Refund failed. Please check the transaction status."
+msgstr "Refund failed. Please check the transaction status."
+
+msgctxt "Languages::cardlink.action_refund_success"
+msgid "Refund processed successfully."
+msgstr "Refund processed successfully."
+
+msgctxt "Languages::cardlink.action_capture_failed"
+msgid "Capture failed. The transaction might have expired or was already settled."
+msgstr "Capture failed. The transaction might have expired or was already settled."
+
+msgctxt "Languages::cardlink.action_capture_success"
+msgid "Payment captured successfully."
+msgstr "Payment captured successfully."
+
+msgctxt "Languages::cardlink.action_void_failed"
+msgid "Void transaction failed. Please check the details in the Cardlink Portal or try again."
+msgstr "Void transaction failed. Please check the details in the Cardlink Portal or try again."
+
+msgctxt "Languages::cardlink.action_void_success"
+msgid "Transaction voided successfully."
+msgstr "Transaction voided successfully."
+
+msgctxt "Languages::cardlink.capture_amount"
+msgid "Capture Amount"
+msgstr "Capture Amount"
+
+msgctxt "Languages::cardlink.capture_full_amount"
+msgid "Capture full amount"
+msgstr "Capture full amount"
+
+msgctxt "Languages::cardlink.capture_partial_amount"
+msgid "Partial capture"
+msgstr "Partial capture"
+
+msgctxt "Languages::cardlink.execute_capture"
+msgid "Execute Capture"
+msgstr "Execute Capture"
+
+msgctxt "Languages::cardlink.void_transaction"
+msgid "Void Transaction"
+msgstr "Void Transaction"
+
+
+msgctxt "Languages::cardlink.transaction_history"
+msgid "Transaction History"
+msgstr "Transaction History"
+
+msgctxt "Languages::cardlink.settlement"
+msgid "Settlement"
+msgstr "Settlement"
+
+msgctxt "Languages::cardlink.refund_not_available_yet"
+msgid "Refund not available yet"
+msgstr "Η επιστροφή δεν είναι διαθέσιμη ακόμη"
+
+msgctxt "Languages::cardlink.void_not_available"
+msgid "Captures have already been made. Cancellation is not possible. Please wait for clearance to make a Refund."
+msgstr "Έχουν γίνει ήδη εισπράξεις (Captures). Η ακύρωση δεν είναι δυνατή. Παρακαλούμε περιμένετε την εκκαθάριση για να κάνετε Επιστροφή (Refund)."
+
+msgctxt "Languages::cardlink.capture_remaining"
+msgid "Capture remaining amount"
+msgstr "Capture remaining amount"
+
+msgctxt "Languages::cardlink.transaction_failed"
+msgid "Transaction Failed"
+msgstr "Transaction Failed"
+
+msgctxt "Languages::cardlink.action_cancel_success"
+msgid "Cancel Success"
+msgstr "Cancel Success"
+
+msgctxt "Languages::cardlink.transaction_closed"
+msgid "Transaction closed"
+msgstr "Transaction closed"
+
+msgctxt "Languages::cardlink.background_confirmation_url"
+msgid "Background confirmation URL"
+msgstr "Background confirmation URL"
+
+msgctxt "Languages::cardlink.background_confirmation_tip"
+msgid "Use this URL in Cardlink's back-office as the server-to-server confirmation endpoint."
+msgstr "Use this URL in Cardlink's back-office as the server-to-server confirmation endpoint."
+
+msgctxt "Languages::cardlink.use_transaction_history_actions"
+msgid "Use the transaction history actions below"
+msgstr "Use the transaction history actions below"
+
+msgctxt "Languages::cardlink.max_row_action_amount"
+msgid "Maximum available amount"
+msgstr "Maximum available amount"
+
+msgctxt "Languages::cardlink.invalid_action_amount"
+msgid "The requested amount is not valid for the selected Cardlink transaction."
+msgstr "The requested amount is not valid for the selected Cardlink transaction."
+
+msgctxt "Languages::cardlink.no_available_transaction_action"
+msgid "No Cardlink transaction is currently available for this action."
+msgstr "No Cardlink transaction is currently available for this action."
+
+msgctxt "Languages::cardlink.status_refresh_failed"
+msgid "Cardlink status refresh failed. Please try again."
+msgstr "Cardlink status refresh failed. Please try again."
+
+msgctxt "Languages::cardlink.tx_id"
+msgid "Tx ID"
+msgstr "Tx ID"
+
+msgctxt "Languages::cardlink.settlement_ready"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "Languages::cardlink.settlement_settled"
+msgid "SETTLED"
+msgstr "SETTLED"
+
+msgctxt "Languages::cardlink.acquirer_cardlink_checkout"
+msgid "Cardlink Checkout"
+msgstr "Cardlink Checkout"
+
+msgctxt "Languages::cardlink.acquirer_nexi_checkout"
+msgid "Nexi Checkout"
+msgstr "Nexi Checkout"
+
+msgctxt "Languages::cardlink.acquirer_worldline_checkout"
+msgid "Worldline Greece Checkout"
+msgstr "Worldline Greece Checkout"
+
+msgctxt "Languages::cardlink.partial_void_not_supported"
+msgid "Partial void is not supported by Cardlink. Only the full amount of the selected capture can be cancelled before settlement."
+msgstr "Partial void is not supported by Cardlink. Only the full amount of the selected capture can be cancelled before settlement."
+
+msgctxt "Languages::cardlink.full_void_only"
+msgid "Full void only"
+msgstr "Full void only"
+
+msgctxt "Languages::cardlink.full_capture_only"
+msgid "Full capture only"
+msgstr "Full capture only"

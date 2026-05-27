@@ -10,28 +10,23 @@ msgstr "Πύλη πληρωμών Cardlink"
 
 msgctxt "Addons::description::cardlink"
 msgid "Cardlink eCommerce Checkout Payment Gateway allows you to accept payment through various channels such as Visa, Mastercard, Maestro, American Express, Diners, Discover cards on your CS-Cart powered site"
-msgstr "Η πύλη πληρωμών Cardlink eCommerce Checkout Payment Gateway σας επιτρέπει να λαμβάνεται πληρωμές στο CS-Cart e-shop σας μέσω διαφορετικών σχημάτων, όπως Visa, Mastercard, Maestro, American Express, Diners και Discover"
-
-
+msgstr "Η πύλη πληρωμών Cardlink eCommerce Checkout Payment Gateway σάς επιτρέπει να λαμβάνετε πληρωμές στο CS-Cart κατάστημά σας μέσω καρτών Visa, Mastercard, Maestro, American Express, Diners και Discover."
 
 msgctxt "Languages::cardlink.select_your_card"
 msgid "Select your card"
-msgstr "Επιλέξτε μια απο τις αποθηκευμένες κάρτες σας"
-
+msgstr "Επιλέξτε την κάρτα σας"
 
 msgctxt "Languages::cardlink.remove_card"
 msgid "Remove card"
-msgstr "Διαγραγή κάρτας"
+msgstr "Διαγραφή κάρτας"
 
 msgctxt "Languages::cardlink.add_credit_card"
 msgid "Add your credit card"
 msgstr "Προσθήκη κάρτας"
 
-
 msgctxt "Languages::cardlink.store_my_card"
 msgid "Store my card"
-msgstr "Αποθήκευσε την κάρτα μου"
-
+msgstr "Αποθήκευση της κάρτας μου"
 
 msgctxt "Languages::cardlink.select_installments"
 msgid "Select Installments"
@@ -39,7 +34,7 @@ msgstr "Επιλέξτε αριθμό δόσεων"
 
 msgctxt "Languages::cardlink.no_installments"
 msgid "No Installments"
-msgstr "Χωρίς Δόσεις"
+msgstr "Χωρίς δόσεις"
 
 msgctxt "Languages::cardlink.installments"
 msgid "Installments"
@@ -49,48 +44,41 @@ msgctxt "Languages::cardlink.custom_css"
 msgid "Custom CSS"
 msgstr "Αρχείο CSS"
 
-
 msgctxt "Languages::cardlink.custom_css_tip"
 msgid "Url of custom CSS stylesheet, to be used to display payment page styles."
-msgstr "URL του CSS stylesheet που θα χρησιμοποιηθεί για την εμφάνιση των σελίδων πληρωμής."
-
+msgstr "URL του stylesheet CSS που θα χρησιμοποιηθεί για την εμφάνιση της σελίδας πληρωμής."
 
 msgctxt "Languages::cardlink.pre_authorize"
 msgid "Pre Authorize"
-msgstr "Προ-έγκριση"
+msgstr "Προέγκριση"
 
 msgctxt "Languages::cardlink.pre_authorize_tip"
 msgid "Default payment method is Purchase, enable for Pre-Authorized payments. You will then need to accept them from Cardlink eCommerce Tool."
-msgstr "Η προεπιλεγμένη μέθοδος πληρωμής είναι η Αγορά. Ενεργοποιήστε τις πληρωμές με Προέγκριση. Στη συνέχεια θα πρέπει να τις αποδεχτείτε από το Cardlink Payment Gateway."
-
+msgstr "Η προεπιλεγμένη μέθοδος πληρωμής είναι η Αγορά. Ενεργοποιήστε το για πληρωμές με προέγκριση. Στη συνέχεια θα πρέπει να τις αποδεχτείτε από το Cardlink eCommerce Tool."
 
 msgctxt "Languages::cardlink.store_cards"
 msgid "Store card details"
-msgstr "Αποθήκευση των στοιχείων της κάρτας"
+msgstr "Αποθήκευση στοιχείων κάρτας"
 
 msgctxt "Languages::cardlink.store_cards_tip"
 msgid "If checked the user will have the ability to store credit card details for future purchases. You must contact Cardlink first.<br /> Disabled when iframe mode is ON."
-msgstr "Εάν επιλεγεί, ο χρήστης θα έχει τη δυνατότητα αποθήκευσης στοιχείων πιστωτικής κάρτας για μελλοντικές αγορές. Πρέπει πρώτα να επικοινωνήσετε με την Cardlink.<br /> Ανενεργό όταν η λειτουργία πληρωμής μέσω iframe είναι ενεργή."
-
+msgstr "Αν ενεργοποιηθεί, ο χρήστης θα μπορεί να αποθηκεύει στοιχεία πιστωτικής κάρτας για μελλοντικές αγορές. Πρέπει πρώτα να επικοινωνήσετε με την Cardlink.<br /> Απενεργοποιείται όταν το iframe mode είναι ενεργό."
 
 msgctxt "Languages::cardlink.enable_iframe"
 msgid "Enable payment iframe"
-msgstr "Ενεργοποίηση πληρωμής μέσω iframe"
-
+msgstr "Ενεργοποίηση iframe πληρωμής"
 
 msgctxt "Languages::cardlink.enable_iframe_tip"
-msgid "Customers will stay in website to complete payments without redirecting to Cardlink's eCommerce payment page.<br />You must have a valid SSL certificate installed on your domain.<br />Not recommended bacause some functionality will be unavailable. For example, the customer won’t be able to subscribe for newsletters at checkout."
-msgstr "Οι πελάτες θα πραγματοποιήσουν την πληρωμή χωρίς να φύγουν από την σελίδα σας.<br />Θα πρέπει να έχετε ένα έγκυρο SSL certificate εγκατεστημένο στο domain σας. <br />Δεν συνίσταται γιατί μερικές λειτουργίες δεν θα είναι διαθέσιμες. Για παράδειγμα, ο πελάτης δεν θα μπορεί να κάνει εγγραφή στα newsletters κατά την ολοκλήρωση της παραγγελίας. "
+msgid "Customers will stay in website to complete payments without redirecting to Cardlink's eCommerce payment page.<br />You must have a valid SSL certificate installed on your domain.<br />Not recommended bacause some functionality will be unavailable. For example, the customer wonâ€™t be able to subscribe for newsletters at checkout."
+msgstr "Οι πελάτες θα παραμένουν στο website για να ολοκληρώσουν την πληρωμή χωρίς ανακατεύθυνση στη σελίδα πληρωμής της Cardlink.<br />Πρέπει να έχετε έγκυρο SSL certificate εγκατεστημένο στο domain σας.<br />Δεν συνιστάται, γιατί ορισμένες λειτουργίες δεν θα είναι διαθέσιμες. Για παράδειγμα, ο πελάτης δεν θα μπορεί να εγγραφεί σε newsletters κατά το checkout."
 
 msgctxt "Languages::cardlink.language"
 msgid "Language"
 msgstr "Γλώσσα"
 
-
 msgctxt "Languages::cardlink.english"
 msgid "English"
 msgstr "Αγγλικά"
-
 
 msgctxt "Languages::cardlink.greek"
 msgid "Greek"
@@ -98,55 +86,47 @@ msgstr "Ελληνικά"
 
 msgctxt "Languages::cardlink.test_live_mode"
 msgid "Test/Live mode"
-msgstr "Test/Live συνθήκες"
-
+msgstr "Λειτουργία Test/Live"
 
 msgctxt "Languages::cardlink.test"
 msgid "Test mode"
-msgstr "Test περιβάλλον"
-
+msgstr "Λειτουργία Test"
 
 msgctxt "Languages::cardlink.live"
 msgid "Live mode"
-msgstr "Live περιβάλλον"
-
+msgstr "Λειτουργία Live"
 
 msgctxt "Languages::cardlink.acquirer"
 msgid "Acquirer"
-msgstr "Επιλέξτε οργανισμό αποδοχής πληρωμών"
-
+msgstr "Οργανισμός αποδοχής πληρωμών"
 
 msgctxt "Languages::cardlink.min_amount"
 msgid "Min Amount"
 msgstr "Ελάχιστο ποσό"
 
-
 msgctxt "Languages::cardlink.number_of_installments"
 msgid "Number of installments"
-msgstr "Αριθμός Δόσεων"
-
-
+msgstr "Αριθμός δόσεων"
 
 msgctxt "Languages::cardlink.unexpected_error"
 msgid "Unexpected error received"
-msgstr "Μη αναμενόμενο σφάλμα"
+msgstr "Λήφθηκε μη αναμενόμενο σφάλμα"
 
 msgctxt "Languages::cardlink.preauth_expired"
 msgid "Preauthorized Transaction has expired"
-msgstr "Η προ-έγκριση έχει λήξει"
+msgstr "Η προεγκεκριμένη συναλλαγή έχει λήξει"
 
 msgctxt "Languages::cardlink.preauth_canceled"
 msgid "Merchant cancelled the pre-auth transaction"
-msgstr "Ο έμπορος ακύρωσε την προ-έγκριση"
-
+msgstr "Ο έμπορος ακύρωσε τη συναλλαγή προέγκρισης"
 
 msgctxt "Languages::cardlink.unknown_error"
 msgid "Unknown error received"
-msgstr "Άγνωστο σφάλμα!"
+msgstr "Άγνωστο σφάλμα"
 
 msgctxt "Languages::cardlink.digest_wrong"
 msgid "Digest was wrong! Possible fraud"
-msgstr "Η συμβολοσειρά της cardlink δεν συμφωνεί με την παραγώμενη! Πιθανή απάτη"
+msgstr "Το digest δεν ήταν σωστό. Πιθανή απάτη"
 
 msgctxt "Languages::cardlink.iris"
 msgid "IRIS"
@@ -158,5 +138,176 @@ msgstr "IRIS Customer Code"
 
 msgctxt "Languages::cardlink.iris_misconfigured_acquirer"
 msgid "You must select Nexi to be able to use IRIS payments"
-msgstr "Θα πρέπει να έχετε ενεργοποιήσει την μέθοδο πληρωμής Cardlink και να έχετε επιλέξει Nexi για να χρησιμοποιήσετε IRIS"
+msgstr "Πρέπει να επιλέξετε Nexi για να μπορείτε να χρησιμοποιήσετε πληρωμές IRIS"
 
+msgctxt "Languages::cardlink.api_password"
+msgid "Direct API Password"
+msgstr "Κωδικός Direct API"
+
+msgctxt "Languages::cardlink.gateway_id"
+msgid "Gateway ID"
+msgstr "Gateway ID"
+
+msgctxt "Languages::cardlink.gateway_id_tip"
+msgid "Required for Google Pay and Apple Pay integrations."
+msgstr "Απαραίτητο για τη διασύνδεση με Google Pay και Apple Pay."
+
+msgctxt "Languages::cardlink.enable_secondary_actions"
+msgid "Enable Secondary Actions"
+msgstr "Ενεργοποίηση δευτερευουσών ενεργειών"
+
+msgctxt "Languages::cardlink.enable_wallets"
+msgid "Enable Wallets"
+msgstr "Ενεργοποίηση Wallets"
+
+msgctxt "Languages::cardlink.pay_with_wallet"
+msgid "Pay with Wallet"
+msgstr "Πληρωμή με Wallet"
+
+msgctxt "Languages::cardlink.refund_amount"
+msgid "Refund Amount"
+msgstr "Ποσό επιστροφής"
+
+msgctxt "Languages::cardlink.execute_refund"
+msgid "Execute Refund"
+msgstr "Εκτέλεση επιστροφής"
+
+msgctxt "Languages::cardlink.action_refund_failed"
+msgid "Refund failed. Please check the transaction status."
+msgstr "Η επιστροφή χρημάτων απέτυχε. Παρακαλούμε ελέγξτε την κατάσταση της συναλλαγής."
+
+msgctxt "Languages::cardlink.action_refund_success"
+msgid "Refund processed successfully."
+msgstr "Η επιστροφή χρημάτων ολοκληρώθηκε με επιτυχία."
+
+msgctxt "Languages::cardlink.action_capture_failed"
+msgid "Capture failed. The transaction might have expired or was already settled."
+msgstr "Η οριστικοποίηση πληρωμής (Capture) απέτυχε. Η συναλλαγή ενδέχεται να έχει λήξει ή να έχει ήδη εκκαθαριστεί."
+
+msgctxt "Languages::cardlink.action_capture_success"
+msgid "Payment captured successfully."
+msgstr "Η οριστικοποίηση της πληρωμής ολοκληρώθηκε με επιτυχία."
+
+msgctxt "Languages::cardlink.action_void_failed"
+msgid "Void transaction failed. Please check the details in the Cardlink Portal or try again."
+msgstr "Η ακύρωση της συναλλαγής (Void) απέτυχε. Παρακαλούμε ελέγξτε τις λεπτομέρειες στο Cardlink Portal ή δοκιμάστε ξανά."
+
+msgctxt "Languages::cardlink.action_void_success"
+msgid "Transaction voided successfully."
+msgstr "Η ακύρωση της συναλλαγής ολοκληρώθηκε με επιτυχία."
+
+msgctxt "Languages::cardlink.capture_amount"
+msgid "Capture Amount"
+msgstr "Ποσό οριστικοποίησης"
+
+msgctxt "Languages::cardlink.capture_full_amount"
+msgid "Capture full amount"
+msgstr "Οριστικοποίηση όλου του ποσού"
+
+msgctxt "Languages::cardlink.capture_partial_amount"
+msgid "Partial capture"
+msgstr "Μερική οριστικοποίηση"
+
+msgctxt "Languages::cardlink.execute_capture"
+msgid "Execute Capture"
+msgstr "Εκτέλεση οριστικοποίησης"
+
+msgctxt "Languages::cardlink.void_transaction"
+msgid "Void Transaction"
+msgstr "Ακύρωση συναλλαγής (Void)"
+
+msgctxt "Languages::cardlink.transaction_history"
+msgid "Transaction History"
+msgstr "Ιστορικό συναλλαγών"
+
+msgctxt "Languages::cardlink.settlement"
+msgid "Settlement"
+msgstr "Εκκαθάριση"
+
+msgctxt "Languages::cardlink.refund_not_available_yet"
+msgid "Refund not available yet"
+msgstr "Η επιστροφή δεν είναι διαθέσιμη ακόμη"
+
+msgctxt "Languages::cardlink.void_not_available"
+msgid "Captures have already been made. Cancellation is not possible. Please wait for clearance to make a Refund."
+msgstr "Έχουν ήδη πραγματοποιηθεί εισπράξεις (Captures). Η ακύρωση δεν είναι δυνατή. Παρακαλούμε περιμένετε την εκκαθάριση για να κάνετε επιστροφή (Refund)."
+
+msgctxt "Languages::cardlink.capture_remaining"
+msgid "Capture remaining amount"
+msgstr "Οριστικοποίηση υπολειπόμενου ποσού"
+
+msgctxt "Languages::cardlink.transaction_failed"
+msgid "Transaction Failed"
+msgstr "Η συναλλαγή απέτυχε"
+
+msgctxt "Languages::cardlink.action_cancel_success"
+msgid "Cancel Success"
+msgstr "Επιτυχημένη ακύρωση"
+
+msgctxt "Languages::cardlink.transaction_closed"
+msgid "Transaction closed"
+msgstr "Η συναλλαγή έχει κλείσει"
+
+msgctxt "Languages::cardlink.background_confirmation_url"
+msgid "Background confirmation URL"
+msgstr "URL επιβεβαίωσης background"
+
+msgctxt "Languages::cardlink.background_confirmation_tip"
+msgid "Use this URL in Cardlink''s back-office as the server-to-server confirmation endpoint."
+msgstr "Χρησιμοποιήστε αυτό το URL στο back-office της Cardlink ως server-to-server endpoint επιβεβαίωσης."
+
+msgctxt "Languages::cardlink.use_transaction_history_actions"
+msgid "Use the transaction history actions below"
+msgstr "Χρησιμοποιήστε τις ενέργειες του ιστορικού συναλλαγών παρακάτω"
+
+msgctxt "Languages::cardlink.max_row_action_amount"
+msgid "Maximum available amount"
+msgstr "Μέγιστο διαθέσιμο ποσό"
+
+msgctxt "Languages::cardlink.invalid_action_amount"
+msgid "The requested amount is not valid for the selected Cardlink transaction."
+msgstr "Το ζητούμενο ποσό δεν είναι έγκυρο για την επιλεγμένη συναλλαγή Cardlink."
+
+msgctxt "Languages::cardlink.no_available_transaction_action"
+msgid "No Cardlink transaction is currently available for this action."
+msgstr "Δεν υπάρχει διαθέσιμη συναλλαγή Cardlink για αυτή την ενέργεια."
+
+msgctxt "Languages::cardlink.status_refresh_failed"
+msgid "Cardlink status refresh failed. Please try again."
+msgstr "Η ανανέωση κατάστασης από την Cardlink απέτυχε. Δοκιμάστε ξανά."
+
+msgctxt "Languages::cardlink.tx_id"
+msgid "Tx ID"
+msgstr "Tx ID"
+
+msgctxt "Languages::cardlink.settlement_ready"
+msgid "READY"
+msgstr "ΕΤΟΙΜΟ"
+
+msgctxt "Languages::cardlink.settlement_settled"
+msgid "SETTLED"
+msgstr "ΕΚΚΑΘΑΡΙΣΜΕΝΟ"
+
+msgctxt "Languages::cardlink.acquirer_cardlink_checkout"
+msgid "Cardlink Checkout"
+msgstr "Cardlink Checkout"
+
+msgctxt "Languages::cardlink.acquirer_nexi_checkout"
+msgid "Nexi Checkout"
+msgstr "Nexi Checkout"
+
+msgctxt "Languages::cardlink.acquirer_worldline_checkout"
+msgid "Worldline Greece Checkout"
+msgstr "Worldline Greece Checkout"
+
+msgctxt "Languages::cardlink.partial_void_not_supported"
+msgid "Partial void is not supported by Cardlink. Only the full amount of the selected capture can be cancelled before settlement."
+msgstr "Η Cardlink δεν υποστηρίζει μερική ακύρωση (partial void). Πριν από την εκκαθάριση μπορεί να ακυρωθεί μόνο ολόκληρο το ποσό του επιλεγμένου capture."
+
+msgctxt "Languages::cardlink.full_void_only"
+msgid "Full void only"
+msgstr "Μόνο πλήρης ακύρωση"
+
+msgctxt "Languages::cardlink.full_capture_only"
+msgid "Full capture only"
+msgstr "Μόνο πλήρης οριστικοποίηση"

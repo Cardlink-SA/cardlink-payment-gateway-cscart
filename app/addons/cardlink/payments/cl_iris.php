@@ -305,12 +305,19 @@ if (defined('PAYMENT_NOTIFICATION')) {
 	}
 
 
+	$iris_customer_code = trim($processor_data_iris['processor_params']['iris_customer_code'] ?? '');
+	$rf_payment_code    = '';
+
+	if ($iris_customer_code !== '') {
+		$rf_payment_code = fn_cardlink_iris_rf_code($order_id, $iris_customer_code);
+	}
+
 	$post_data = array(
 		'version'              => $version,
 		'mid'                  => $processor_data['processor_params']['merchant_id'],
 		'lang'                 => CART_LANGUAGE,
 		'orderid'              => $order_id . 'at' . date('Ymdhisu'),
-		'orderDesc'            => $processor_data['processor_params']['acquirer'] == 1 && trim($processor_data_iris['processor_params']['iris_customer_code'])  ? fn_cardlink_iris_rf_code($order_id, $processor_data_iris['processor_params']['iris_customer_code']): "Order #{$order_id}",
+		'orderDesc'            => $rf_payment_code !== '' ? $rf_payment_code : "Order #{$order_id}",
 		//EG: Added to get RF
 		'orderAmount'          => $amount,
 		'currency'             => $processor_data['processor_params']['currency'],

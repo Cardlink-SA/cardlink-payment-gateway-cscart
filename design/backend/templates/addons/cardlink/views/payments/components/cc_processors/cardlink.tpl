@@ -2,9 +2,9 @@
     <label class="control-label" for="ab_acquirer">{__("cardlink.acquirer")}:</label>
     <div class="controls">
         <select name="payment_data[processor_params][acquirer]" id="ab_acquirer">
-            <option value="0"{if $processor_params.acquirer eq "0"} selected="selected"{/if}>Cardlink Checkout</option>
-            <option value="1"{if $processor_params.acquirer eq "1"} selected="selected"{/if}>Nexi Checkout</option>
-            <option value="2"{if $processor_params.acquirer eq "2"} selected="selected"{/if}>Worldline Greece Checkout</option>
+            <option value="0"{if $processor_params.acquirer eq "0"} selected="selected"{/if}>{__("cardlink.acquirer_cardlink_checkout")}</option>
+            <option value="1"{if $processor_params.acquirer eq "1"} selected="selected"{/if}>{__("cardlink.acquirer_nexi_checkout")}</option>
+            <option value="2"{if $processor_params.acquirer eq "2"} selected="selected"{/if}>{__("cardlink.acquirer_worldline_checkout")}</option>
         </select>
     </div>
 
@@ -24,6 +24,39 @@
         <input type="password" name="payment_data[processor_params][shared_secret]" id="ab_shared_secret" value="{$processor_params.shared_secret}"   size="60">
     </div>
 </div>
+
+
+{*<div class="control-group">*}
+{*    <label class="control-label" for="ab_api_password">{__("cardlink.api_password")}:</label>*}
+{*    <div class="controls">*}
+{*        <input type="password" name="payment_data[processor_params][api_password]" id="ab_api_password" value="{$processor_params.api_password}" size="60">*}
+{*    </div>*}
+{*</div>*}
+
+{*<div class="control-group">*}
+{*    <label class="control-label" for="ab_gateway_id">{__("cardlink.gateway_id")}:</label>*}
+{*    <div class="controls">*}
+{*        <input type="text" name="payment_data[processor_params][gateway_id]" id="ab_gateway_id" value="{$processor_params.gateway_id}" size="60">*}
+{*        <p class="well well-small help-block">{__("cardlink.gateway_id_tip")}</p>*}
+{*    </div>*}
+{*</div>*}
+
+<div class="control-group">
+    <label class="control-label" for="ab_secondary_actions">{__("cardlink.enable_secondary_actions")}:</label>
+    <div class="controls">
+        <input type="hidden" name="payment_data[processor_params][secondary_actions]" value="no" />
+        <input type="checkbox" name="payment_data[processor_params][secondary_actions]" value="yes" {if $processor_params.secondary_actions eq "yes"} checked {/if} id="ab_secondary_actions"/>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="ab_wallets_enabled">{__("cardlink.enable_wallets")}:</label>
+    <div class="controls">
+        <input type="hidden" name="payment_data[processor_params][wallets_enabled]" value="no" />
+        <input type="checkbox" name="payment_data[processor_params][wallets_enabled]" value="yes" {if $processor_params.wallets_enabled eq "yes"} checked {/if} id="ab_wallets_enabled"/>
+    </div>
+</div>
+
 
 
 <div class="control-group">
@@ -87,6 +120,15 @@
             <option value="test"{if $processor_params.mode eq "test"} selected="selected"{/if}>{__("test")}</option>
             <option value="live"{if $processor_params.mode eq "live"} selected="selected"{/if}>{__("live")}</option>
         </select>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label">{__("cardlink.background_confirmation_url")}:</label>
+    <div class="controls">
+        {assign var="cardlink_confirmation_url" value=""|fn_cardlink_build_background_confirmation_url}
+        <input type="text" value="{$cardlink_confirmation_url}" class="input-text" size="60" readonly="readonly" onclick="this.select();" />
+        <p class="well well-small help-block">{__("cardlink.background_confirmation_tip")}</p>
     </div>
 </div>
 

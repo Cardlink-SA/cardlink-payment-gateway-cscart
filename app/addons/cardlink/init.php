@@ -2,5 +2,7 @@
 
 
 fn_register_hooks(
-	'get_payments_post'
+	'get_payments_post',
+	'change_order_status',
+	'fn_payment_issuing_refund'
 );

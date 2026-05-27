@@ -18,10 +18,14 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
 
 
+//	fn_print_die($_REQUEST);
 
 
 	if ($mode == 'success' && !empty($_REQUEST['order_id'])) {
 		$order_info = fn_get_order_info($order_id);
+
+
+
 
 		if (empty($processor_data)) {
 			$processor_data = fn_get_processor_data($order_info['payment_id']);
@@ -121,9 +125,10 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
 				$auth['order_ids'] = [$order_id];
 
-				$pp_response['order_status'] = 'P';
+				$pp_response['order_status'] = $_REQUEST['status'] == 'CAPTURED' ? 'P' : 'O';
 				$pp_response['reason_text'] = __('transaction_approved');
 				$pp_response['transaction_id'] = $_REQUEST['paymentRef'];
+				$pp_response['orderid'] = $_REQUEST['orderid'];
 
 				$payMethod = $_REQUEST['payMethod'];
 
